@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
-    --laranja-claro: #524e4e;
- }
+    --laranja-claro: #c52626;
+}
+
 
 body {
-    background-color: #CB6D43;;
+    background-color: #524e4e;
     font-size: 1rem;
     font-family: 'Montserrat';
 }
@@ -102,7 +103,6 @@ h2 {
 
 #galeria {
     background-color: #838282;
-
 }
 
 .fundo-galeria {
@@ -144,6 +144,7 @@ h2 {
     right:20px;
     z-index: 1000;
 }
+
 .rotacao-botao{
     transform: rotate(-90deg);
     transform-origin: right center;
@@ -160,4 +161,38 @@ h2 {
 }
 .apresenta-lista{
     display: none;
+}
+
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+}
+
+.alto-contraste #tropicalia {
+    background: none;
+}
+
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+.alto-contraste .fundo-galeria {
+    background: none;
 }
